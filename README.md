@@ -2,6 +2,8 @@
 web and DBMS (flask{Backend}, HTML,CSS{Frontend}, Mysql{DBMS})
 IN ctrl + ~ (ie vscode terminal ):
 
+After full project made in yours:
+
 According to variablenvironment:
 type this:
 

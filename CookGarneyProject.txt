@@ -1,0 +1,16 @@
+in DBMS you will type: 
+CREATE DATABASE IF NOT EXISTS recipe_db;
+
+USE recipe_db;
+CREATE TABLE recipes (
+    id INT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    ingredients TEXT NOT NULL,
+    instructions TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+SELECT * FROM recipes;
+DROP TABLE IF EXISTS recipes;
+
+

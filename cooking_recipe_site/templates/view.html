@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ recipe[1] }}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #ff6347;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 25px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            transition: background-color 0.2s ease;
+        }
+
+        .back-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ recipe[1] }}</h1>
+
+        <h3>🍴 Ingredients</h3>
+        <p>{{ recipe[2] }}</p>
+
+        <h3>👨‍🍳 Instructions</h3>
+        <p>{{ recipe[3] }}</p>
+
+        <a href="{{ url_for('index') }}" class="back-link">← Back to Recipes</a>
+    </div>
+</body>
+</html>
